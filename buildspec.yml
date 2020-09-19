@@ -23,7 +23,7 @@ phases:
      type: zip
      files:
        - 'appspec.yml'
-       - 'scripts/start_server'
-       - 'scripts/install_dependencies'
+       - 'start_server'
+       - 'install_dependencies'
        - 'target/Helloworld.war'
       
