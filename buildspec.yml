@@ -2,18 +2,28 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      java: corretto8
+    commands:
+       - echo Entering install phase...
+       - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+       - echo Entering pre_build phase...
+       - echo Nothing to do in the pre_build phase...
   build:
-    commands:
-      - echo Build started on `date`
-      - mvn test 
+     commands:
+       - echo Entering build phase...
+       - echo Build started on 'date'
+       - mvn -f pom.xml compile
+       - mvn -f pom.xml package
   post_build:
-    commands:
-      - echo Build completed on `date`
-      - mvn package
-artifacts:
-  files:
-    - target/my-app-1.0-SNAPSHOT.jar
-    - appspec.yml
-  discard-paths: yes
+     commands:
+       - echo Entering post_build phase...
+       - echo Build completed on 'date'
+  artifacts:
+     type: zip
+     files:
+       - 'appspec.yml'
+       - 'scripts/start_server'
+       - 'scripts/install_dependencies'
+       - 'target/Helloworld.war'
+      
