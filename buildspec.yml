@@ -22,8 +22,8 @@ phases:
   artifacts:
      type: zip
      files:
-       - 'appspec.yml'
-       - 'start_server'
-       - 'install_dependencies'
-       - 'target/Helloworld.war'
+       - appspec.yml
+       - start_server
+       - install_dependencies
+       - target/Helloworld.war
       
