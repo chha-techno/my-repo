@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.technologia.software</groupId>
-  <artifactId>sample_webapp</artifactId>
+  <artifactId>Helloworld</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
