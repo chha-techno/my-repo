@@ -25,4 +25,4 @@ artifacts:
     - appspec.yml
     - start_server
     - install_dependencies
-    - target/Helloworld.war    
+    - Helloworld.war    
